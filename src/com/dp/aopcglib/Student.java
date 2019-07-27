@@ -8,7 +8,6 @@ public class Student {
 	
 	public void liaoGirls() {
 		System.out.println("学习结束，我要去撩妹了！");
-//		System.out.println(this.getClass().getSimpleName());
 		study();
 	}
 }

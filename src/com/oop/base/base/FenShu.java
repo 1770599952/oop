@@ -3,15 +3,15 @@ package com.oop.base.base;
 public class FenShu {
 	private long molecular;// 分子
 	private long denominator;// 分母
- 
+
 	public long getMolecular() {
 		return molecular;
 	}
- 
+
 	public long getDenominator() {
 		return denominator;
 	}
- 
+
 	//首先判断输入是否合法，然后调用gaibian()这个方法求取最大公约数
 	public FenShu(long molecular, long denominator) {
 		this.molecular = molecular;
@@ -22,7 +22,7 @@ public class FenShu {
 		}
 		gaibian();
 	}
- 
+
 	//求最大公约数
 	private FenShu gaibian() {
 		long gcd = this.gYueShu(this.molecular, this.denominator);
@@ -32,10 +32,10 @@ public class FenShu {
 		//返回约分后的分数
 		return this;
 	}
- 
+
 	/**
 	 * 最大公约数
-	 * 
+	 *
 	 * @param a
 	 * @param b
 	 * @return
@@ -49,10 +49,10 @@ public class FenShu {
 		long gyueshu = a;
 		return gyueshu;
 	}
- 
+
 	/**
 	 * 加法
-	 * 
+	 *
 	 * @param second
 	 * @return
 	 */
@@ -62,10 +62,10 @@ public class FenShu {
 				+ fenShu.molecular * this.denominator, this.denominator
 				* fenShu.denominator);
 	}
- 
+
 	/**
 	 * 减法
-	 * 
+	 *
 	 * @param second
 	 * @return
 	 */
@@ -74,10 +74,10 @@ public class FenShu {
 				- fenShu.molecular * this.denominator, this.denominator
 				* fenShu.denominator);
 	}
- 
+
 	/**
 	 * 乘法
-	 * 
+	 *
 	 * @param second
 	 * @return
 	 */
@@ -85,7 +85,7 @@ public class FenShu {
 		return new FenShu(this.molecular * fenShu.molecular, this.denominator
 				* fenShu.denominator);
 	}
- 
+
 	/**
 	 * 除法
 	 * @param fenShu

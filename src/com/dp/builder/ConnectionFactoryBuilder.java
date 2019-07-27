@@ -56,20 +56,14 @@ public class ConnectionFactoryBuilder {
 		return this;
 	}
 
-
-
 	public String getPassword() {
 		return password;
 	}
-
-
 
 	public ConnectionFactoryBuilder setPassword(String password) {
 		this.password = password;
 		return this;
 	}
-
-
 
 	public static class ConnectionFactory {
 
